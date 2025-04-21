@@ -19,7 +19,11 @@
             <button onclick="redirectTo('login')" class="btn btn-success mt-3">Already a user? Login</button>
         </div>
     </div>
-
+    <script>
+        function redirectTo(page) {
+            window.location.href = page + '.html';
+        }
+    </script>
     <!-- <script src="app.js"></script> -->
     <script src="../js/register.js"></script>
 </body>
