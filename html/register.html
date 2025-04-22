@@ -78,6 +78,9 @@
 
             const userData = { username, email, firstName, secondName, password };
 
+            // Log the user data to the console as JSON
+            console.log("User Data: ", JSON.stringify(userData, null, 2));
+
             try {
                 // Make API call to register user
                 const response = await apiCall(API_BASE_URL, "POST", userData);
